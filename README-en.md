@@ -1,22 +1,24 @@
 houjinbangou-api
 ================
+a Web-API wrapper for [corporate number system](https://www.houjin-bangou.nta.go.jp/en/) in Japan written in Typescript.  
+Japanese: [https://www.houjin-bangou.nta.go.jp/]()  
+Specification(written in ja):
+[https://www.houjin-bangou.nta.go.jp/webapi/]()  
 
-TypeScriptで書かれた[国税庁法人番号システムWeb-API](https://www.houjin-bangou.nta.go.jp/webapi/)のラッパーライブラリです。
-
-インストール
+Install
 ----------------
 
 ```node
 npm i houjinbangou-api
 ```
 
-使用方法
+Usage
 ----------------
 
-サービスの利用にアプリケーションIDが必要です。持っていない場合は以下のフォームより発行手続きを進めてください。  
+You must have an Application ID to use the service. Please proceed this form what request to publish of ID, if you don't have it.  
 [https://www.houjin-bangou.nta.go.jp/webapi/riyo-todokede/]()  
 
-以下は各サービスにアクセスするコード例です。  
+Here is a example code that making request to endpoints.
 
 ```typescript
 import { HoujinBangou } from "houjinbangou-api"
@@ -38,6 +40,12 @@ async function(){
 
 }
 ```
+
+Future tasks
+-----------------
+
+- [ ] Add defined type information of response data.  
+- [ ] Add option that response data converts JSON.
 
 LICENSE
 ----------------
