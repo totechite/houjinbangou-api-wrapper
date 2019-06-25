@@ -1,6 +1,6 @@
 houjinbangou-api
 ================
-
+[![Build Status](https://travis-ci.com/totechite/houjinbangou-api-wrapper.svg?branch=master)](https://travis-ci.com/totechite/houjinbangou-api-wrapper)  
 TypeScriptで書かれた[国税庁法人番号システムWeb-API](https://www.houjin-bangou.nta.go.jp/webapi/)のラッパーライブラリです。
 
 English: [README-en.md](./README-en.md)
@@ -50,4 +50,4 @@ LICENSE
 ----------------
 
 MIT license  
-[http://opensource.org/licenses/mit-license.php]()
+[http://opensource.org/licenses/mit-license.php](https://opensource.org/licenses/mit-license.php)

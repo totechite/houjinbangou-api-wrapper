@@ -1,5 +1,6 @@
 houjinbangou-api
 ================
+[![Build Status](https://travis-ci.com/totechite/houjinbangou-api-wrapper.svg?branch=master)](https://travis-ci.com/totechite/houjinbangou-api-wrapper)  
 a Web-API wrapper for [corporate number system](https://www.houjin-bangou.nta.go.jp/en/) in Japan written in Typescript.  
 Japanese: [https://www.houjin-bangou.nta.go.jp/]()  
 Specification(written in ja):
@@ -49,4 +50,4 @@ LICENSE
 ----------------
 
 MIT license  
-[http://opensource.org/licenses/mit-license.php]()
+[http://opensource.org/licenses/mit-license.php](https://opensource.org/licenses/mit-license.php)
