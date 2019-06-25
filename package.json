@@ -3,6 +3,7 @@
   "description": "a Web-API wrapper for corporate number system in Japan written in Typescript.",
   "author": "Yusuke Kataoka",
   "version": "0.0.1",
+  "repository": {"url": "https://github.com/totechite/houjinbangou-api-wrapper.git"},
   "main": "./lib/src/index.js",
   "module": "./lib/src/index.js",
   "types": "./lib/src/index.d.ts",
