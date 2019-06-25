@@ -5,7 +5,8 @@ import {
     ServiceReqBuilder,
     diffRequestQuery,
     nameRequestQuery,
-    numRequestQuery
+    numRequestQuery,
+    HBResponse
 } from "./types"
 
 /**
@@ -13,7 +14,7 @@ import {
  * @param applicationId 
  * @param versionNumber 
  */
-export function HoujinBangou(applicationId: string, versionNumber: number = 4): ServiceReqBuilder {
+export function HoujinBangou(applicationId: string, option: { versionNumber: number, JSON: boolean } = { versionNumber: 4, JSON: false }): ServiceReqBuilder {
 
 
     /**
@@ -22,7 +23,7 @@ export function HoujinBangou(applicationId: string, versionNumber: number = 4): 
      */
     async function getUrlObject(endpoint: ENDPOINTS): Promise<url.UrlWithParsedQuery> {
         let url_obj = url.parse(HOUJINBANGOU_API_BASE_URL, true)
-        url_obj.pathname = `/${versionNumber}${endpoint}`
+        url_obj.pathname = `/${option.versionNumber}${endpoint}`
         url_obj.query = { "id": applicationId }
         return url_obj
     }
@@ -46,7 +47,7 @@ export function HoujinBangou(applicationId: string, versionNumber: number = 4): 
      * 
      * @param query 
      */
-    async function num(query: numRequestQuery): Promise<axios.AxiosResponse<any>> {
+    async function num(query: numRequestQuery): Promise<HBResponse<any>> {
         let get_url_obj = getUrlObject(ENDPOINTS.Num)
         // translate to string
         if (typeof query.number !== "string") {
@@ -71,7 +72,7 @@ export function HoujinBangou(applicationId: string, versionNumber: number = 4): 
      * 
      * @param query 
      */
-    async function diff(query: diffRequestQuery): Promise<axios.AxiosResponse<any>> {
+    async function diff(query: diffRequestQuery): Promise<HBResponse<any>> {
         let get_url_obj = getUrlObject(ENDPOINTS.Diff)
 
         // translate to string
@@ -97,7 +98,7 @@ export function HoujinBangou(applicationId: string, versionNumber: number = 4): 
      * 
      * @param query 
      */
-    async function name(query: nameRequestQuery): Promise<axios.AxiosResponse<any>> {
+    async function name(query: nameRequestQuery): Promise<HBResponse<any>> {
         let get_url_obj = getUrlObject(ENDPOINTS.Name)
 
         // translate to string
@@ -120,7 +121,7 @@ export function HoujinBangou(applicationId: string, versionNumber: number = 4): 
     }
 
     return {
-        version: versionNumber,
+        version: option.versionNumber,
         applicationId: applicationId,
         num: num,
         diff: diff,
