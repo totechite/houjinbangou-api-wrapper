@@ -5,12 +5,10 @@ Japanese: [https://www.houjin-bangou.nta.go.jp/]()
 Specification(written in ja):
 [https://www.houjin-bangou.nta.go.jp/webapi/]()  
 
-Install
+~~Install~~
 ----------------
 
-```node
-npm i houjinbangou-api
-```
+Not publish yet.
 
 Usage
 ----------------
