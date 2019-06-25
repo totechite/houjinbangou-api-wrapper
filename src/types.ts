@@ -1,7 +1,6 @@
 import { AxiosResponse } from "axios"
 
 export interface ServiceReqBuilder {
-    url: string,
     version: number,
     applicationId: string
     num: (query: numRequestQuery) => Promise<AxiosResponse<any>>,

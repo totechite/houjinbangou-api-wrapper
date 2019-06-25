@@ -3,12 +3,13 @@ houjinbangou-api
 
 TypeScriptで書かれた[国税庁法人番号システムWeb-API](https://www.houjin-bangou.nta.go.jp/webapi/)のラッパーライブラリです。
 
-インストール
+English: [README-en.md](./README-en.md)
+
+~~インストール~~
 ----------------
 
-```node
-npm i houjinbangou-api
-```
+Not publish yet.
+
 
 使用方法
 ----------------
@@ -38,6 +39,12 @@ async function(){
 
 }
 ```
+
+Future tasks
+-----------------
+
+- [ ] Add defined type information of response data.  
+- [ ] Add option that response data converts JSON.
 
 LICENSE
 ----------------

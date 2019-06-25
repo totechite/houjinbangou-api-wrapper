@@ -1,12 +1,12 @@
 import * as axios from "axios";
 import * as url from "url"
 import { HOUJINBANGOU_API_BASE_URL, ENDPOINTS } from "./constants"
-// import {
-//     ServiceReqBuilder,
-//     diffRequestQuery,
-//     nameRequestQuery,
-//     numRequestQuery
-// } from "./types"
+import {
+    ServiceReqBuilder,
+    diffRequestQuery,
+    nameRequestQuery,
+    numRequestQuery
+} from "./types"
 
 /**
  * 
@@ -14,6 +14,7 @@ import { HOUJINBANGOU_API_BASE_URL, ENDPOINTS } from "./constants"
  * @param versionNumber 
  */
 export function HoujinBangou(applicationId: string, versionNumber: number = 4): ServiceReqBuilder {
+
 
     /**
      * 
@@ -52,7 +53,7 @@ export function HoujinBangou(applicationId: string, versionNumber: number = 4): 
             query.number = query.number.join(",")
         }
         if (typeof query.type === "number") {
-            query.type = query.type.toString().padEnd(2, "0") as "01" | "02" | "12"
+            query.type = query.type.toString().padStart(2, "0") as "01" | "02" | "12"
         }
 
         // generate query what contain both that Required and Optional,
@@ -75,10 +76,10 @@ export function HoujinBangou(applicationId: string, versionNumber: number = 4): 
 
         // translate to string
         if (typeof query.type === "number") {
-            query.type = query.type.toString().padEnd(2, "0") as "01" | "02" | "12"
+            query.type = query.type.toString().padStart(2, "0") as "01" | "02" | "12"
         }
         if (typeof query.kind === "number") {
-            query.kind = query.kind.toString().padEnd(2, "0") as "01" | "02" | "03" | "04"
+            query.kind = query.kind.toString().padStart(2, "0") as "01" | "02" | "03" | "04"
         }
 
         // generate query what contain both that Required and Optional,
@@ -101,10 +102,10 @@ export function HoujinBangou(applicationId: string, versionNumber: number = 4): 
 
         // translate to string
         if (typeof query.type === "number") {
-            query.type = query.type.toString().padEnd(2, "0") as "01" | "02" | "12"
+            query.type = query.type.toString().padStart(2, "0") as "01" | "02" | "12"
         }
         if (typeof query.kind === "number") {
-            query.kind = query.kind.toString().padEnd(2, "0") as "01" | "02" | "03" | "04"
+            query.kind = query.kind.toString().padStart(2, "0") as "01" | "02" | "03" | "04"
         }
 
         // generate query what contain both that Required and Optional,
@@ -119,7 +120,6 @@ export function HoujinBangou(applicationId: string, versionNumber: number = 4): 
     }
 
     return {
-        url: HOUJINBANGOU_API_BASE_URL,
         version: versionNumber,
         applicationId: applicationId,
         num: num,
