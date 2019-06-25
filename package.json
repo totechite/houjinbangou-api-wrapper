@@ -1,10 +1,21 @@
 {
-  "name": "houjin_bangou_API",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "houjinbangou-api",
+  "description": "a Web-API wrapper for corporate number system in Japan written in Typescript.",
+  "author": "Yusuke Kataoka",
+  "version": "0.0.1",
+  "main": "./lib/src/index.js",
+  "module": "./lib/src/index.js",
+  "types": "./lib/src/index.d.ts",
+  "keywords": [
+    "corporate number",
+    "法人番号",
+    "API",
+    "wrapper"
+  ],
+  "license": "MIT",
   "scripts": {
-    "typedoc": "typedoc --out ./docs/ ./src/",
+    "typedoc": "typedoc --out ./docs/ ./src/ --readme ./README-en.md",
+    "th": "typedoc --help",
     "test": "jest"
   },
   "dependencies": {
@@ -17,8 +28,5 @@
     "ts-jest": "^24.0.2",
     "typedoc": "^0.14.2",
     "typescript": "3.5.2"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
