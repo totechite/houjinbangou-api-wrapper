@@ -1,12 +1,14 @@
 import * as axios from "axios";
 import * as url from "url"
+import * as xml2json from "xml2json"
 import { HOUJINBANGOU_API_BASE_URL, ENDPOINTS } from "./constants"
 import {
     ServiceReqBuilder,
     diffRequestQuery,
     nameRequestQuery,
     numRequestQuery,
-    HBResponse
+    HBResponse,
+    ResponseData
 } from "./types"
 
 /**
@@ -26,6 +28,14 @@ export function HoujinBangou(applicationId: string, option: { versionNumber: num
         url_obj.pathname = `/${option.versionNumber}${endpoint}`
         url_obj.query = { "id": applicationId }
         return url_obj
+    }
+
+    /**
+     * 
+     * @param num 
+     */
+    function zero_pad(num: number): string {
+        return num.toString().padStart(2, "0")
     }
 
     /**
@@ -65,7 +75,10 @@ export function HoujinBangou(applicationId: string, option: { versionNumber: num
 
         let url_obj = await get_url_obj
         url_obj.query = await queryObject
-        return axios.default.get(url.format(url_obj)).then(res => res).catch(err => err)
+        return axios.default.get(url.format(url_obj)).then(res => {
+            res.data = JSON.parse(xml2json.toJson(res.data))
+            return res
+        }).catch(err => err)
     }
 
     /**
@@ -77,10 +90,24 @@ export function HoujinBangou(applicationId: string, option: { versionNumber: num
 
         // translate to string
         if (typeof query.type === "number") {
-            query.type = query.type.toString().padStart(2, "0") as "01" | "02" | "12"
+            query.type = zero_pad(query.type) as "01" | "02" | "12"
         }
         if (typeof query.kind === "number") {
-            query.kind = query.kind.toString().padStart(2, "0") as "01" | "02" | "03" | "04"
+            query.kind = zero_pad(query.kind) as "01" | "02" | "03" | "04"
+        }
+        if (typeof query.from !== "string") {
+            query.from = [
+                zero_pad(query.from.getFullYear()),
+                zero_pad(query.from.getMonth()),
+                zero_pad(query.from.getDate())
+            ].join("-")
+        }
+        if (typeof query.to !== "string") {
+            query.to = [
+                zero_pad(query.to.getFullYear()),
+                zero_pad(query.to.getMonth()),
+                zero_pad(query.to.getDate())
+            ].join("-")
         }
 
         // generate query what contain both that Required and Optional,
@@ -91,7 +118,10 @@ export function HoujinBangou(applicationId: string, option: { versionNumber: num
 
         let url_obj = await get_url_obj
         url_obj.query = await queryObject
-        return axios.default.get(url.format(url_obj)).then(res => res).catch(err => err)
+        return axios.default.get(url.format(url_obj)).then(res => {
+            res.data = JSON.parse(xml2json.toJson(res.data))
+            return res
+        }).catch(err => err)
     }
 
     /**
@@ -103,21 +133,41 @@ export function HoujinBangou(applicationId: string, option: { versionNumber: num
 
         // translate to string
         if (typeof query.type === "number") {
-            query.type = query.type.toString().padStart(2, "0") as "01" | "02" | "12"
+            query.type = zero_pad(query.type) as "01" | "02" | "12"
         }
         if (typeof query.kind === "number") {
-            query.kind = query.kind.toString().padStart(2, "0") as "01" | "02" | "03" | "04"
+            query.kind = zero_pad(query.kind) as "01" | "02" | "03" | "04"
         }
-
+        if (typeof query.from !== "undefined") {
+            if (typeof query.from !== "string") {
+                query.from = [
+                    zero_pad(query.from.getFullYear()),
+                    zero_pad(query.from.getMonth()),
+                    zero_pad(query.from.getDate())
+                ].join("-")
+            }
+        }
+        if (typeof query.to !== "undefined") {
+            if (typeof query.to !== "string") {
+                query.to = [
+                    zero_pad(query.to.getFullYear()),
+                    zero_pad(query.to.getMonth()),
+                    zero_pad(query.to.getDate())
+                ].join("-")
+            }
+        }
         // generate query what contain both that Required and Optional,
         let queryObject = (async (): Promise<{}> => {
             let required_query = { "id": applicationId, "name": query.name, "type": query.type }
             return (await addOptionalArgs(required_query))([["mode", query.mode], ["target", query.target], ["address", query.address], ["kind", query.kind], ["change", query.change], ["close", query.close], ["from", query.from], ["to", query.to], ["divide", query.divide]])
         })()
-
+        
         let url_obj = await get_url_obj
         url_obj.query = await queryObject
-        return axios.default.get(url.format(url_obj)).then(res => res).catch(err => err)
+        return axios.default.get(url.format(url_obj)).then(res => {
+            res.data = JSON.parse(xml2json.toJson(res.data))
+            return res
+        }).catch(err => err)
     }
 
     return {
@@ -128,4 +178,3 @@ export function HoujinBangou(applicationId: string, option: { versionNumber: num
         name: name
     }
 }
-

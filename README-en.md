@@ -2,15 +2,19 @@ houjinbangou-api
 ================
 [![Build Status](https://travis-ci.com/totechite/houjinbangou-api-wrapper.svg?branch=master)](https://travis-ci.com/totechite/houjinbangou-api-wrapper)  
 
-a Web-API wrapper for [corporate number system](https://www.houjin-bangou.nta.go.jp/en/) in Japan written in Typescript.  
+a Web-API wrapper for [corporate number system](https://www.houjin-bangou.nta.go.jp/en/) in Japan. Written in Typescript.  
 Japanese: [https://www.houjin-bangou.nta.go.jp/]()  
 Specification(written in ja):
 [https://www.houjin-bangou.nta.go.jp/webapi/]()  
 
-~~Install~~
+Install
 ----------------
 
-Not publish yet.
+Node.js
+
+```typescript
+npm i houjinbangou-api
+```
 
 Usage
 ----------------
@@ -40,12 +44,6 @@ async function(){
 
 }
 ```
-
-Future tasks
------------------
-
-- [ ] Add defined type information of response data.  
-- [ ] Add option that response data converts JSON.
 
 LICENSE
 ----------------

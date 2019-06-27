@@ -6,11 +6,14 @@ houjinbangou-api
 
 English: [README-en.md](./README-en.md)
 
-~~インストール~~
+インストール
 ----------------
 
-Not publish yet.
+Node.js
 
+```typescript
+npm i houjinbangou-api
+```
 
 使用方法
 ----------------
@@ -40,12 +43,6 @@ async function(){
 
 }
 ```
-
-Future tasks
------------------
-
-- [ ] Add defined type information of response data.  
-- [ ] Add option that response data converts JSON.
 
 LICENSE
 ----------------

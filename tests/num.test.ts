@@ -6,7 +6,7 @@ const num = HoujinBangou(APPLICATION_ID).num
 
 
 test('request to /num', async () => {
-    const result = await num({number: "5050005005266", type: "02"})
+    const result = await num({ number: "5050005005266", type: "02" })
     console.log(result.data)
     expect(1).toBe(1)
 })
