@@ -1,14 +1,11 @@
-import { HoujinBangou } from "../src/index"
+import HoujinBangou, { corporation }  from "../src/index"
 
 const APPLICATION_ID: string = process.env.API_HOUJIN_BANGOU_ID!
 
-const num = HoujinBangou(APPLICATION_ID).num
-
+const num = new HoujinBangou(APPLICATION_ID).num
 
 test('request to /num', async () => {
-    const result = await num({ number: "5050005005266", type: "02" })
-    console.log(result.data)
-    expect(1).toBe(1)
+    let result = await num({ number: "5050005005266" })
+    let cityName = (<corporation>result.data.corporations.corporation).cityName
+    expect("つくば市").toBe(cityName)
 })
-
-

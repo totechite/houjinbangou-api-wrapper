@@ -1,14 +1,12 @@
-import { HoujinBangou } from "../src/index"
+import HoujinBangou, { HoujinBangouWithPlaneResponse } from "../src/index"
 
 const APPLICATION_ID: string = process.env.API_HOUJIN_BANGOU_ID!
 
-const name = HoujinBangou(APPLICATION_ID).name
-
+const name = (<HoujinBangouWithPlaneResponse> new HoujinBangou(APPLICATION_ID).isJson(false)).name
 
 test('request to /name', async () => {
-    const result = await name({ name: "神宮", type: "02", mode: "2" })
-    console.log(result.data)
-    expect(1).toBe(1)
+    let result = await name({ name: "神宮", mode: "2", type: 12 })
+    expect(true).toBe(result.data!==undefined)
 })
 
 
