@@ -81,7 +81,7 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_.html#responsedata" class="tsd-kind-icon">Response<wbr>Data</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_types_.html#corporation-1" class="tsd-kind-icon">corporation</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_.html#corporation-1" class="tsd-kind-icon">corporation</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_.html#diffrequestquery" class="tsd-kind-icon">diff<wbr>Request<wbr>Query</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_.html#namerequestquery" class="tsd-kind-icon">name<wbr>Request<wbr>Query</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_.html#numrequestquery" class="tsd-kind-icon">num<wbr>Request<wbr>Query</a></li>
@@ -98,7 +98,7 @@
 					<div class="tsd-signature tsd-kind-icon">Response<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/totechite/houjinbangou-api-wrapper/blob/60d7088/src/types.ts#L44">types.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/totechite/houjinbangou-api-wrapper/blob/f7ee497/src/types.ts#L236">types.ts:236</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -108,32 +108,57 @@
 								<h5>corporations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter">
-										<h5><span class="tsd-flag ts-flagOptional">Optional</span> corporation<span class="tsd-signature-symbol">?: </span><a href="_types_.html#responsedata.__type.corporations.__type-1.corporation" class="tsd-signature-type">corporation</a><span class="tsd-signature-symbol">[]</span></h5>
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> corporation<span class="tsd-signature-symbol">?: </span><a href="_types_.html#responsedata.__type.corporations.__type-1.corporation" class="tsd-signature-type">corporation</a><span class="tsd-signature-symbol"> | </span><a href="_types_.html#responsedata.__type.corporations.__type-1.corporation" class="tsd-signature-type">corporation</a><span class="tsd-signature-symbol">[]</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>法人等要素</p>
+											</div>
+										</div>
 									</li>
 									<li class="tsd-parameter">
 										<h5>count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>総件数</p>
+											</div>
+										</div>
 									</li>
 									<li class="tsd-parameter">
 										<h5>divide<wbr>Number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>分割番号</p>
+											</div>
+										</div>
 									</li>
 									<li class="tsd-parameter">
 										<h5>divide<wbr>Size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>分割数</p>
+											</div>
+										</div>
 									</li>
 									<li class="tsd-parameter">
 										<h5>last<wbr>Update<wbr>Date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>最終更新年月日</p>
+											</div>
+										</div>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="corporation-1" class="tsd-anchor"></a>
 					<h3>corporation</h3>
 					<div class="tsd-signature tsd-kind-icon">corporation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/totechite/houjinbangou-api-wrapper/blob/60d7088/src/types.ts#L54">types.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/totechite/houjinbangou-api-wrapper/blob/f7ee497/src/types.ts#L265">types.ts:265</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -141,93 +166,354 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5>address<wbr>Image<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>国内所在地イメージID</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>address<wbr>Outside<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>国外所在地</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>addressoutside<wbr>Image<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>国外所在地イメージID</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>assignment<wbr>Date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>法人番号指定年月日</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>change<wbr>Cause<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>変更事由の詳細</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>change<wbr>Date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>変更年月日
+										YYYY‐MM‐DD</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>city<wbr>Code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>市区町村コード
+										JIS X 0402に準ずる</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>city<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>国内所在地（市区町村）</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>close<wbr>Cause<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"01"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"11"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"21"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"31"</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>登記記録の閉鎖等の事由</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>param</dt>
+										<dd><p>清算の結了等</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>合併による解散等</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>登記官による閉鎖</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>その他の清算の結了等</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>close<wbr>Date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>登記記録の閉鎖等年月日</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>corporate<wbr>Number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>法人番号</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>correct<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"0"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"1"</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>訂正区分</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>param</dt>
+										<dd><p>訂正以外</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>訂正</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>en<wbr>Address<wbr>Outside<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>国外所在地（英語表記）</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>en<wbr>City<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>国内所在地（市町村丁目番地等）（英語表記）</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>en<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>商号又は名称（英語表記）</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>en<wbr>Prefecture<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>国内所在地（都道府県）（英語表記）</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>furigana<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>フリガナ</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>hihyoji<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"0"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"1"</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>検索対象除外</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>param</dt>
+										<dd><p>検索対象</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>検索対象除外</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>kind<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"101"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"201"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"301"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"302"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"303"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"304"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"305"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"399"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"401"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"499"</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>法人種別</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>param</dt>
+										<dd><p>国の機関</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>地方公共団体</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>株式会社</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>有限会社</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>合名会社</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>合資会社</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>合同会社</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>その他の設立登記法人</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>外国会社等</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>その他</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>latest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"0"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"1"</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>最新履歴</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>param</dt>
+										<dd><p>過去情報</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>最新情報</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>商号又は名称</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>max</dt>
+										<dd><p>150</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>name<wbr>Image<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>商号又は名称イメージID</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>post<wbr>Code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>郵便番号</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>prefecture<wbr>Code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>都道府県コード
+										JIS X 0401に準ずる</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>prefecture<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>国内所在地（都道府県）</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>process<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"01"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"11"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"12"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"13"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"21"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"22"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"77"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"72"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"81"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"99"</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>処理区分</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>param</dt>
+										<dd><p>新規</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>商号又は名称の変更</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>国内所在地の変更</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>国外所在地の変更</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>登記記録の閉鎖等</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>登記記録の復活等</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>吸収合併</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>吸収合併無効</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>商号の登記の抹消</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>削除</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>sequence<wbr>Number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>一連番号</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>street<wbr>Number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>国内所在地（丁目番地等）</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>successor<wbr>Corporate<wbr>Number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>承継先法人番号</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>update<wbr>Date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>更新年月日
+										YYYY‐MM‐DD</p>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -238,7 +524,7 @@
 					<div class="tsd-signature tsd-kind-icon">diff<wbr>Request<wbr>Query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/totechite/houjinbangou-api-wrapper/blob/60d7088/src/types.ts#L21">types.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/totechite/houjinbangou-api-wrapper/blob/f7ee497/src/types.ts#L45">types.ts:45</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -246,21 +532,113 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> address<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>国内所在地の都道府県コード又は都道府県コードと市区町村コードを組み合わせたコードのいずれかを指定できます。市ードのみではエラー(エラーコード 051)となります。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>&quot;99&quot;
+												都道府県コード[２桁]（JIS X 0401）をセットします。
+											国外所在地を指定する場合は「&quot;99&quot;」をセットします。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>都道府県コード[２桁]（JIS X 0401）＋市区町村コード[３桁]（JIS X 0402）
+												都道府県コード及び市区町村コードの詳細については、以下の URL※（日本工業標準調査会/データベース検索）を参照のこと。
+											<a href="https://www.jisc.go.jp">https://www.jisc.go.jp</a></p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> divide<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>分割番号を指定できます。
+											指定しない場合は、「1」で処理します。</p>
+										</dd>
+										<dt>param</dt>
+										<dd></dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>取得の対象とする更新年月日の開始日を指定します。
+											Web‐APIサービス開始日（2015年12月１日）より前の日付を指定すると、エラー(エラーコード013）となります。</p>
+										</dd>
+										<dt>example</dt>
+										<dd><p>&quot;2019-01-01&quot;</p>
+										</dd>
+										<dt>example</dt>
+										<dd><p>new Date(&quot;2019/01/31&quot;)</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> kind<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"01"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"02"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"03"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"04"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>法人種別を指定できます。
+												カンマ区切りで複数の法人種別を指定できますが、最大４種類までです。
+											指定しない場合は、全ての法人種別が含まれたデータが応答します。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>国の機関</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>地方公共団体</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>設立登記法人</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>外国会社等・その他</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>取得の対象とする更新年月日の終了日を指定します。
+											取得期間の指定可能な最大日数は 50 日のため、終了日は取得期間開始日から 50 日以内の任意の日を指定します。</p>
+										</dd>
+										<dt>example</dt>
+										<dd><p>&quot;2019-01-01&quot;</p>
+										</dd>
+										<dt>example</dt>
+										<dd><p>new Date(&quot;2019/01/31&quot;)</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
-								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"01"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"02"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"12"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> type<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"01"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"02"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"12"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>レスポンスデータのファイル形式と文字コードを指定します。JSONオプションがTrueの場合JSON形式に矯正されます。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>CSV 形式/Shift‐JIS(JIS 第一・第二水準)</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>CSV 形式/Unicode(JIS 第一水準から第四水準)</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>XML 形式/Unicode(JIS 第一水準から第四水準)</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -271,7 +649,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<wbr>Request<wbr>Query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/totechite/houjinbangou-api-wrapper/blob/60d7088/src/types.ts#L30">types.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/totechite/houjinbangou-api-wrapper/blob/f7ee497/src/types.ts#L115">types.ts:115</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -279,36 +657,193 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> address<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>国内所在地の都道府県コード又は都道府県コードと市区町村コードを組み合わせたコードのいずれかを指定できます。市ードのみではエラー(エラーコード 051)となります。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>&quot;99&quot;
+												都道府県コード[２桁]（JIS X 0401）をセットします。
+											国外所在地を指定する場合は「&quot;99&quot;」をセットします。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>都道府県コード[２桁]（JIS X 0401）＋市区町村コード[３桁]（JIS X 0402）
+												都道府県コード及び市区町村コードの詳細については、以下の URL※（日本工業標準調査会/データベース検索）を参照のこと。
+											<a href="https://www.jisc.go.jp">https://www.jisc.go.jp</a></p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> change<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"0"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"1"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>法人名や所在地の変更があった法人等について過去の情報を含めて検索するかどうかを指定できます。
+											指定しない場合は、「０」（変更履歴を含めない）で処理します。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>変更履歴を含めない。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>変更履歴を含める。</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> close<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"0"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"1"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>登記記録の閉鎖等があった法人等の情報を取得するかどうかを指定できます。
+											指定しない場合は、「１」（登記記録の閉鎖等を含める）で処理します。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>登記記録の閉鎖等を含めない。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>登記記録の閉鎖等を含める。</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> divide<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>分割番号を指定できます。
+											指定しない場合は、「1」で処理します。</p>
+										</dd>
+										<dt>param</dt>
+										<dd></dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> from<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>取得の対象とする法人番号指定年月日の開始日を指定できます。
+											なお、番号法施行日（平成 27 年 10 月 5 日）より前の日付を指定すると、エラー(エラーコード 152)となります。</p>
+										</dd>
+										<dt>example</dt>
+										<dd><p>&quot;2019-01-01&quot;</p>
+										</dd>
+										<dt>example</dt>
+										<dd><p>new Date(&quot;2019-01-01&quot;)</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> kind<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"01"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"02"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"03"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"04"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>法人種別を指定できます。
+												カンマ区切りで複数の法人種別を指定できますが、最大４種類までです。
+											指定しない場合は、全ての法人種別が含まれたデータが応答します。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>国の機関</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>地方公共団体</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>設立登記法人</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>外国会社等・その他</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> mode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"1"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"2"</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>検索方式を指定できます。
+											指定しない場合は、｢１｣（前方一致検索）で処理します。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>前方一致検索</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>部分一致検索</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>取得の対象とする法人名の文字列を入力してください。</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> target<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"1"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"2"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"3"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>検索対象を指定できます。
+											指定しない場合は、｢１｣（JIS 第一・第二水準）で処理します。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>JIS 第一・第二水準 （あいまい検索</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>JIS 第一～第四水準 （完全一致検索）</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>英語表記 （英語表記登録情報検索）</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> to<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>取得の対象とする法人番号指定年月日の終了日を指定できます。</p>
+										</dd>
+										<dt>example</dt>
+										<dd><p>&quot;2019-01-01&quot;</p>
+										</dd>
+										<dt>example</dt>
+										<dd><p>new Date(&quot;2019-01-01&quot;)</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
-								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"01"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"02"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"12"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> type<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"01"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"02"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"12"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>レスポンスデータのファイル形式と文字コードを指定します。JSONオプションがTrueの場合JSON形式に矯正されます。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>CSV 形式/Shift‐JIS(JIS 第一・第二水準)</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>CSV 形式/Unicode(JIS 第一水準から第四水準)</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>XML 形式/Unicode(JIS 第一水準から第四水準)</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -319,7 +854,7 @@
 					<div class="tsd-signature tsd-kind-icon">num<wbr>Request<wbr>Query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/totechite/houjinbangou-api-wrapper/blob/60d7088/src/types.ts#L15">types.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/totechite/houjinbangou-api-wrapper/blob/f7ee497/src/types.ts#L16">types.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -327,12 +862,45 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> history<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"0"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"1"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>公表情報の変更履歴を取得するかどうかを指定できます。
+												指定しない場合は、「0」（変更履歴なし）として処理され、リクエスト時点の最新情報のみ応答します。
+												0 -&gt; 変更履歴なし
+											1 -&gt; 変更履歴あり</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>13 桁の法人番号を指定します。複数（最大 10 件）の法人番号を指定するにはArray形式で指定してください。</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
-								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"01"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"02"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"12"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> type<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"01"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"02"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"12"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>description</dt>
+										<dd><p>レスポンスデータのファイル形式と文字コードを指定します。JSONオプションがTrueの場合JSON形式に矯正されます。</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>CSV 形式/Shift‐JIS(JIS 第一・第二水準)</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>CSV 形式/Unicode(JIS 第一水準から第四水準)</p>
+										</dd>
+										<dt>param</dt>
+										<dd><p>XML 形式/Unicode(JIS 第一水準から第四水準)</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -367,7 +935,7 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_types_.html#responsedata" class="tsd-kind-icon">Response<wbr>Data</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_types_.html#corporation-1" class="tsd-kind-icon">corporation</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">

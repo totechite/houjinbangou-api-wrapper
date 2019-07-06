@@ -28,7 +28,7 @@ Here is a example code that making request to endpoints.
 import { HoujinBangou } from "houjinbangou-api"
 
 const APPLICATION_ID: string = "XXXXXXXXXX"
-const HB = HoujinBangou(APPLICATION_ID)
+const HB = new HoujinBangou(APPLICATION_ID)
 
 /* Request endpoints */
 async function(){
@@ -39,7 +39,7 @@ async function(){
     // /diff
     let response_diff = await HB.diff({from: "2019-06-25", to: "2019-06-25", type: "02"})
 
-    // /name 
+    // /name
     let response_name = await HB.name({ name: "大学", type: "02", mode: "2" })
 
 }

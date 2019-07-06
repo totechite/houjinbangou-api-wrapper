@@ -27,7 +27,7 @@ npm i houjinbangou-api
 import { HoujinBangou } from "houjinbangou-api"
 
 const APPLICATION_ID: string = "XXXXXXXXXX"
-const HB = HoujinBangou(APPLICATION_ID)
+const HB = new HoujinBangou(APPLICATION_ID)
 
 /* Request endpoints */
 async function(){
