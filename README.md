@@ -19,7 +19,7 @@ npm i houjinbangou-api
 ----------------
 
 サービスの利用にアプリケーションIDが必要です。持っていない場合は以下のフォームより発行手続きを進めてください。  
-[https://www.houjin-bangou.nta.go.jp/webapi/riyo-todokede/]()  
+[https://www.houjin-bangou.nta.go.jp/webapi/riyo-todokede/](https://www.houjin-bangou.nta.go.jp/webapi/riyo-todokede/)  
 
 以下は各サービスにアクセスするコード例です。  
 
