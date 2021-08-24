@@ -19,6 +19,8 @@ npm i houjinbangou-api
 Usage
 ----------------
 
+Document：[https://totechite.github.io/houjinbangou-api-wrapper/index.html](https://totechite.github.io/houjinbangou-api-wrapper/index.html)   
+
 You must have an Application ID to use the service. Please proceed this form what request to publish of ID, if you don't have it.  
 [https://www.houjin-bangou.nta.go.jp/webapi/riyo-todokede/]()  
 

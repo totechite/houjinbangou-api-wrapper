@@ -18,6 +18,8 @@ npm i houjinbangou-api
 使用方法
 ----------------
 
+ドキュメント：[https://totechite.github.io/houjinbangou-api-wrapper/index.html](https://totechite.github.io/houjinbangou-api-wrapper/index.html)   
+
 サービスの利用にアプリケーションIDが必要です。持っていない場合は以下のフォームより発行手続きを進めてください。  
 [https://www.houjin-bangou.nta.go.jp/webapi/riyo-todokede/](https://www.houjin-bangou.nta.go.jp/webapi/riyo-todokede/)  
 
